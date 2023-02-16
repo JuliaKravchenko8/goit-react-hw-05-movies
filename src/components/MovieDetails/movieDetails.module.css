@@ -16,22 +16,18 @@
 }
 
 .btn {
-  position: relative;
-  display: inline-block;
-  padding: 9px 9px 9px 25px;
-  color: orange;
+  padding-left: 25px;
+  color: #272727;
   font-size: 16px;
   border: none;
   background-color: #fff;
   border-radius: 7px;
-  border: 1px solid orange;
-  margin: 20px 0 0 5px;
+  margin-left: 5px;
 }
 
 .btn:hover {
-  color: #272727;
+  color: #e0670b;
   cursor: pointer;
-  fill: #272727;
 }
 
 .btn::before {
@@ -41,9 +37,8 @@
   position: absolute;
   width: 15px;
   height: 15px;
-  left: 5px;
-
-  top: 10px;
+  left: 10px;
+  top: 122px;
 }
 
 .btnList {
@@ -53,9 +48,9 @@
 }
 
 .castBtn {
+  padding: 9px 9px 9px 25px;
   position: relative;
-  padding: 9px;
-  background-color: orange;
+  background-color: #e0670b;
   font-size: 16px;
   border: none;
   width: 110px;
@@ -70,12 +65,45 @@
   position: absolute;
   width: 15px;
   height: 15px;
-  left: 10px;
+  left: 25px;
 }
 
 .castBtn:hover {
-  background-color: rgb(255, 141, 2);
+  background-color: #126b18dc;
   cursor: pointer;
+}
+
+.reviewsBtn {
+  position: relative;
+  padding: 9px 9px 9px 30px;
+  background-color: #e0670b;
+  font-size: 16px;
+  width: 110px;
+  border: none;
+  color: #fff;
+  border-radius: 7px;
+  margin-left: 15px;
+}
+
+.reviewsBtn::before {
+  content: '';
+  background-image: url(../SVG/book-alt2.svg);
+  background-size: cover;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 15px;
+  top: 10px;
+}
+
+.reviewsBtn:hover {
+  background-color: #126b18dc;
+  cursor: pointer;
+}
+
+.descrTitle {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .loading {

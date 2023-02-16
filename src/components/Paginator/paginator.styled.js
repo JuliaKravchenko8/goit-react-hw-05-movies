@@ -26,7 +26,7 @@ export const StyledPaginate = styled(ReactPaginate)`
     border: 1px solid orange;
     border-radius: 7px;
     &:hover {
-      background-color: #fff555;
+      background-color: orange;
       color: #000;
     }
   }

@@ -1,18 +1,31 @@
-.movieItem::before {
-  content: '';
-  background-image: url(../SVG/film.svg);
-  background-size: cover;
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  left: -20px;
-  /* fill: #272727; */
+.movieItem {
+  transform: scale(1);
+  transition: all 0.25s linear;
+}
+
+.mainTitle {
+  padding: 20px 40px;
+  font-size: 30px;
+}
+
+.title {
+  font-size: 18px;
+  width: 300px;
+  margin: 10px 0;
+}
+
+.poster {
+  width: 300px;
+  display: block;
+  border-radius: 3px;
 }
 
 .movieItem:hover,
 .movieItem:focus {
-  color: #05bb11dc;
+  color: #126b18dc;
   cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.25s linear;
 }
 
 .loading {

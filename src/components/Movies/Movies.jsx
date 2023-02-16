@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo } from 'react';
-import { Link, useSearchParams, useLocation } from 'react-router-dom';
+import { useSearchParams, useLocation } from 'react-router-dom';
 import { searchMovie } from '../../shared/services/api';
+import { LinkToDetails } from './Movies.styled';
 import css from './movies.module.css';
 import Paginator from 'components/Paginator/Paginator';
 import { MagnifyingGlass } from 'react-loader-spinner';
@@ -94,11 +95,15 @@ const Movies = () => {
               />
             </div>
           ) : movies?.length > 0 ? (
-            movies.map(({ title, id }) => (
+            movies.map(({ title, id, poster_path }) => (
               <li key={id} className={css.listItem}>
-                <Link state={{ from: location }} to={`/movies/${id}`}>
+                <LinkToDetails
+                  state={{ from: location }}
+                  to={`/movies/${id}`}
+                  cover={poster_path}
+                >
                   {title}
-                </Link>
+                </LinkToDetails>
               </li>
             ))
           ) : (
